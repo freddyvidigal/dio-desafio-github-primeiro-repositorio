@@ -1,0 +1,140 @@
+* {
+     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{
+   width: 100% ;
+   min-height: 100vh;
+   background-color: rgb(243, 243, 243);
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+
+}
+.inicial {
+display: flex;
+align-items: center;
+justify-content: start;
+width: 60%;
+height: 100vh;
+}
+.celular{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+
+}
+.celular img {
+    width: 50rem;
+}
+.entrar{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+width: 50%;
+min-height: 34rem;
+
+}
+
+
+.group1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+background-color: #fff;
+width: 100%;
+padding: 1.3rem 0;
+border: 1px solid lightgray;
+}
+.group1:nth-child(1){
+    min-height: 19rem;
+}
+.logo{
+height: 3rem;
+}
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.foto-perfil img{
+    width: 15vh;
+    margin-bottom: 10px;
+}
+.login{
+background-color: #0095f6;
+color: white;
+padding: 8px;
+border-radius: 4px;
+}
+.logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.Naccoount{
+color: rgb(165, 165, 165);
+}
+.link-blue{
+color: #0095f6;
+}
+.get-the-app{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+padding: 1.3rem 0;
+}
+
+.download{
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+align-items: center;
+}
+.app-download{
+height: 3rem;
+width: 10rem;
+background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image: url(./assets/img/apple-button.png);
+
+}
+.app-download:nth-child(2){
+    background-image: url(./assets/img/googleplay-button.png);
+}
+
+@media (max-width: 1024px) {
+    .inicial{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 650px) {
+    body {
+        background-color: #fff;
+    }
+    .inicial{
+        width: 90%;
+    }
+    .celular{
+        display: none;
+    }
+    .entrar{
+        width: 100%;
+    }
+    .group1{
+        border: 1px solid transparent;
+    }
+}
